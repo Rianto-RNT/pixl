@@ -1,4 +1,4 @@
-## packages
+## Packages
 
 - [fyne](https://github.com/fyne-io/fyne)
 
@@ -61,6 +61,12 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
     [![](https://github.com/Rianto-RNT/pixl/blob/development/doc-assets/pixl-04-spec_002.jpg)](https://github.com/Rianto-RNT)
 - Create new go file in apptype folder
   - apptype.go
+
+### 4) Creating a Swatch
+
+- Swatch.go
+- Swatchrenderer.go
+- Mouse.go
 
 ## Articles
 

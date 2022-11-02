@@ -11,7 +11,7 @@ type BrushType = int
 type PxCanvasconfig struct {
 	DrawingArea fyne.Size
 	CanvaOffset fyne.Position
-	PxRows, Pxcols int
+	PxRows, PxCols int
 	PxSize int
 }
 
@@ -22,4 +22,6 @@ type State struct {
 	FilePath string
 }
 
-func(state *State) SetFilePath(path string)
+func(state *State) SetFilePath(path string) {
+	state.FilePath = path
+}
