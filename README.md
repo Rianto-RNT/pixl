@@ -1,3 +1,7 @@
+## packages
+
+- [fyne](https://github.com/fyne-io/fyne)
+
 ## Development Process
 
 ### 1) Install gcc (Windows version)
@@ -53,7 +57,10 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 ### 3) Canvas Overview & State
 
 - Pxcanvas
-- [![](rnt-image-url)](https://github.com/Rianto-RNT)
+  - Overview diagram explained:
+    [![](https://github.com/Rianto-RNT/pixl/blob/development/doc-assets/pixl-04-spec_002.jpg)](https://github.com/Rianto-RNT)
+- Create new go file in apptype folder
+  - apptype.go
 
 ## Articles
 
