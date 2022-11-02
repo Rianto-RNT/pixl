@@ -24,7 +24,7 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 
 -
 
-### Introduction & Project Setup
+### 2) Introduction & Project Setup
 
 - Pixl
   - About
@@ -41,6 +41,19 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
     - Pan / Zoom image
     - Adaptive layout
     - Brush editor
+    - Folder structure breakdown:
+      - pixl-project
+        - apptype
+        - pixl (main folder)
+        - pxcanvas
+        - swatch
+        - ui
+        - util
+
+### 3) Canvas Overview & State
+
+- Pxcanvas
+- [![](rnt-image-url)](https://github.com/Rianto-RNT)
 
 ## Articles
 
