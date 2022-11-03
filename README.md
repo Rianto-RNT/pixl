@@ -68,6 +68,16 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Swatchrenderer.go
 - Mouse.go
 
+### 5) Swatch Logout & First Run
+
+- Fyne layout diagram explained:
+  [![](https://github.com/Rianto-RNT/pixl/blob/development/doc-assets/pixl-01-fyne_005.jpg)](https://github.com/Rianto-RNT)
+
+- Create new file:
+  - Layout.go
+  - Swatch.go
+  - types.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
