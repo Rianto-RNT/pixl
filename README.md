@@ -78,6 +78,11 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
   - Swatch.go
   - types.go
 
+### 6) Color Picker & App Layout
+
+- Create picker.go file
+- Setup color picker in layout.go file
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
