@@ -87,6 +87,11 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 
 - Create pxcanvase.go
 
+### 7) Pixel Canvas Renderer
+
+- Create pxcanvasrenderer.go
+- Implementing pxcanvasrenderer in pxcanvas.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
