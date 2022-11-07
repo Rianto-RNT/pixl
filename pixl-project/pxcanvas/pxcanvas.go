@@ -14,21 +14,21 @@ type PxCanvasMouseState struct {
 	previousCoord *fyne.PointEvent
 }
 
-type pxCanvas struct {
+type PxCanvas struct {
 	widget.BaseWidget
 	apptype.PxCanvasConfig
 	renderer *PxCanvasRenderer
-	pixelData image.Image
+	PixelData image.Image
 	MouseState PxCanvasMouseState
 	appState *apptype.State
 	reloadImage bool
 }
 
 func (pxCanvas *PxCanvas) Bounds() image.Rectangle {
-	x0 := int(pxCanvas.CanvasOffset.x)
-	y0 := int(pxCanvas.CanvasOffset.y)
-	x1 := int(pxCanvas.PxCols * pxCanvas.PxSize + int(pxCanvas.CanvasOffset.x))
-	y1 := int(pxCanvas.PxRows * pxCanvas.PxSize + int(pxCanvas.CanvasOffset.y))
+	x0 := int(pxCanvas.CanvasOffset.X)
+	y0 := int(pxCanvas.CanvasOffset.Y)
+	x1 := int(pxCanvas.PxCols * pxCanvas.PxSize + int(pxCanvas.CanvasOffset.X))
+	y1 := int(pxCanvas.PxRows * pxCanvas.PxSize + int(pxCanvas.CanvasOffset.Y))
 	return image.Rect(x0,y0,x1,y1)
 }
 

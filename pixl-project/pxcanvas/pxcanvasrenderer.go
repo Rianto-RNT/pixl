@@ -6,7 +6,7 @@ import (
 )
 
 type PxCanvasRenderer struct {
-	pxCanvas    *pxCanvas
+	pxCanvas    *PxCanvas
 	canvasImage *canvas.Image
 	canvasBorder []canvas.Line
 }
@@ -21,7 +21,7 @@ func (renderer *PxCanvasRenderer) Objects() []fyne.CanvasObject {
 	for i := 0; i < len(renderer.canvasBorder); i++ {
 		objects := append(objects, &renderer.canvasBorder[i])
 	}
-	objects := append(objects, renderer.canvasImage)
+	objects = append(objects, renderer.canvasImage)
 	return objects
 }
 
