@@ -10,7 +10,7 @@ type BrushType = int
 
 type PxCanvasconfig struct {
 	DrawingArea fyne.Size
-	CanvaOffset fyne.Position
+	CanvasOffset fyne.Position
 	PxRows, PxCols int
 	PxSize int
 }

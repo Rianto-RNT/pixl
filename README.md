@@ -83,6 +83,10 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Create picker.go file
 - Setup color picker in layout.go file
 
+### 7) Pixel Canvas Structure
+
+- Create pxcanvase.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
