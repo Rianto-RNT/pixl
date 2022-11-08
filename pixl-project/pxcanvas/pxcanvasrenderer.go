@@ -25,9 +25,7 @@ func (renderer *PxCanvasRenderer) Objects() []fyne.CanvasObject {
 	return objects
 }
 
-func (renderer *PxCanvasRenderer) Destroy() {
-	//
-}
+func (renderer *PxCanvasRenderer) Destroy() {}
 
 func (renderer *PxCanvasRenderer) Layout(size fyne.Size) {
 	renderer.LayoutCanvas(size)

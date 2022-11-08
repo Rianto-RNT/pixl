@@ -87,10 +87,14 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 
 - Create pxcanvase.go
 
-### 7) Pixel Canvas Renderer
+### 8) Pixel Canvas Renderer
 
 - Create pxcanvasrenderer.go
 - Implementing pxcanvasrenderer in pxcanvas.go
+
+### 9) Pixel Canvas Layout
+
+- Implementing layout in types.go, pixl.go and layout.go
 
 ## Articles
 

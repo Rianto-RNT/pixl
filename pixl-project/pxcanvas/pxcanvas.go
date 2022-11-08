@@ -19,7 +19,7 @@ type PxCanvas struct {
 	apptype.PxCanvasConfig
 	renderer *PxCanvasRenderer
 	PixelData image.Image
-	MouseState PxCanvasMouseState
+	mouseState PxCanvasMouseState
 	appState *apptype.State
 	reloadImage bool
 }
