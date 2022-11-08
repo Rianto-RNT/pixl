@@ -8,6 +8,4 @@ func (swatch *Swatch) MouseDown(ev *desktop.MouseEvent) {
 	swatch.Refresh()
 }
 
-func (swatch *Swatch) MouseUp(ev *desktop.MouseEvent) {
-	//
-}
+func (swatch *Swatch) MouseUp(ev *desktop.MouseEvent) {}
