@@ -96,6 +96,12 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 
 - Implementing layout in types.go, pixl.go and layout.go
 
+### 10) Panning & Zooming
+
+- Create ops.go file to operating mouse operation
+- Create mouse.go file to move or scroll the mouse
+- Implementing package mouse movement in pxcanvas.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
