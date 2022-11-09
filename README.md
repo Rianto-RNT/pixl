@@ -102,6 +102,13 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Create mouse.go file to move or scroll the mouse
 - Implementing package mouse movement in pxcanvas.go
 
+### 11) Painting Pixels
+
+- Create interface Brushable in apptype to be able set the color
+- Create new function and implementing interface brushable in pxcanvas
+- Create brush.go file
+- Setup mouse movement in mouse.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
