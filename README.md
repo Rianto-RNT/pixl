@@ -109,6 +109,12 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Create brush.go file
 - Setup mouse movement in mouse.go
 
+### 12) Cursor Display
+
+- Create Cursor function in brush.go file
+- Implementing canvas cursor function in pxcanvasrenderer.go
+- Setup cursor in mouse.go file
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
