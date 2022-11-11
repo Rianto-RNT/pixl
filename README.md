@@ -115,6 +115,12 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Implementing canvas cursor function in pxcanvasrenderer.go
 - Setup cursor in mouse.go file
 
+### 13) Creating New Images
+
+- New function for new file or new drawing
+- Create Menus ui (menus.go)
+- Implementing menus.go in layout.go
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
