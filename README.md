@@ -121,6 +121,10 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Create Menus ui (menus.go)
 - Implementing menus.go in layout.go
 
+### 15) Saving Images
+
+- Create save as images
+
 ## Articles
 
 - [Updating MSYS2](https://www.msys2.org/docs/updating/)
