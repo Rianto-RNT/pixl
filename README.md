@@ -121,9 +121,14 @@ $ pacman -S --needed base-devel mingw-w64-x86_64-gdb
 - Create Menus ui (menus.go)
 - Implementing menus.go in layout.go
 
-### 15) Saving Images
+### 14) Saving Images
 
 - Create save as images
+
+### 15) Loading Images
+
+- Create Util.go to to get image color function
+- Implementing Load image in menus.go
 
 ## Articles
 
