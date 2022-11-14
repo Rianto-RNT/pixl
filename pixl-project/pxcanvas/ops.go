@@ -23,3 +23,4 @@ func (pxCanvas *PxCanvas) scale(direction int) {
 		pxCanvas.PxSize = 10
 	}
 }
+

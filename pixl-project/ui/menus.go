@@ -45,6 +45,7 @@ func BuildSaveMenu(app *AppInit) *fyne.MenuItem {
 					dialog.ShowError(err, app.PixlWindow)
 				}
 			}
+
 			fh, err := os.Create(app.State.FilePath)
 			defer tryClose(fh)
 
@@ -66,10 +67,10 @@ func BuildNewMenu(app *AppInit) *fyne.MenuItem {
 		sizeValidator := func(s string) error {
 			width, err := strconv.Atoi(s)
 			if err != nil {
-				return errors.New("Must be positive integer")
+				return errors.New("must be a positive integer")
 			}
 			if width <= 0 {
-				return errors.New("Must be > 0")
+				return errors.New("must be > 0")
 			}
 			return nil
 		}
@@ -89,13 +90,12 @@ func BuildNewMenu(app *AppInit) *fyne.MenuItem {
 				pixelWidth := 0
 				pixelHeight := 0
 				if widthEntry.Validate() != nil {
-					dialog.ShowError(errors.New("Invalid width"), app.PixlWindow)
+					dialog.ShowError(errors.New("invalid width"), app.PixlWindow)
 				} else {
 					pixelWidth, _ = strconv.Atoi(widthEntry.Text)
 				}
-
 				if heightEntry.Validate() != nil {
-					dialog.ShowError(errors.New("Invalid height"), app.PixlWindow)
+					dialog.ShowError(errors.New("invalid height"), app.PixlWindow)
 				} else {
 					pixelHeight, _ = strconv.Atoi(heightEntry.Text)
 				}
@@ -106,8 +106,8 @@ func BuildNewMenu(app *AppInit) *fyne.MenuItem {
 }
 
 func BuildOpenMenu(app *AppInit) *fyne.MenuItem {
-	return fyne.NewMenuItem("Open..", func ()  {
-		dialog.ShowFileOpen(func (uri fyne.URIReadCloser, e error)  {
+	return fyne.NewMenuItem("Open...", func() {
+		dialog.ShowFileOpen(func(uri fyne.URIReadCloser, e error) {
 			if uri == nil {
 				return
 			} else {
@@ -137,7 +137,7 @@ func BuildMenus(app *AppInit) *fyne.Menu {
 		"File",
 		BuildNewMenu(app),
 		BuildOpenMenu(app),
-		BuildSaveMenu(app), 
+		BuildSaveMenu(app),
 		BuildSaveAsMenu(app),
 	)
 }

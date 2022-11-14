@@ -9,8 +9,8 @@ import (
 )
 
 type AppInit struct {
-	PixlCanvas	*pxcanvas.PxCanvas
+	PixlCanvas *pxcanvas.PxCanvas
 	PixlWindow fyne.Window
-	State *apptype.State
-	Swatches []*swatch.Swatch
+	State      *apptype.State
+	Swatches   []*swatch.Swatch
 }

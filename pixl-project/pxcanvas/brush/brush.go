@@ -4,8 +4,8 @@ import (
 	"image/color"
 	"rnt/pixl/apptype"
 
-	"fyne.io/fyne/canvas"
 	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/driver/desktop"
 )
 
@@ -17,11 +17,11 @@ func Cursor(config apptype.PxCanvasConfig, brush apptype.BrushType, ev *desktop.
 	var objects []fyne.CanvasObject
 	switch {
 	case brush == Pixel:
-		pxSize  := float32(config.PxSize)
+		pxSize := float32(config.PxSize)
 		xOrigin := (float32(x) * pxSize) + config.CanvasOffset.X
 		yOrigin := (float32(y) * pxSize) + config.CanvasOffset.Y
 
-		cursorColor := color.NRGBA{80,80,80,255}
+		cursorColor := color.NRGBA{80, 80, 80, 255}
 
 		left := canvas.NewLine(cursorColor)
 		left.StrokeWidth = 3
@@ -36,12 +36,12 @@ func Cursor(config apptype.PxCanvasConfig, brush apptype.BrushType, ev *desktop.
 		right := canvas.NewLine(cursorColor)
 		right.StrokeWidth = 3
 		right.Position1 = fyne.NewPos(xOrigin+pxSize, yOrigin)
-		right.Position2 = fyne.NewPos(xOrigin, yOrigin+pxSize)
-		
+		right.Position2 = fyne.NewPos(xOrigin+pxSize, yOrigin+pxSize)
+
 		bottom := canvas.NewLine(cursorColor)
 		bottom.StrokeWidth = 3
 		bottom.Position1 = fyne.NewPos(xOrigin, yOrigin+pxSize)
-		bottom.Position2 = fyne.NewPos(xOrigin, yOrigin+pxSize)
+		bottom.Position2 = fyne.NewPos(xOrigin+pxSize, yOrigin+pxSize)
 
 		objects = append(objects, left, top, right, bottom)
 	}
